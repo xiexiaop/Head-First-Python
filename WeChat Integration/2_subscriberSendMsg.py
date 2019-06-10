@@ -12,8 +12,13 @@ def get_access_token():
         url="https://api.weixin.qq.com/cgi-bin/token",
         params={
             "grant_type": "client_credential",
-            "appid": "wx3a026a0fbe15d5cb",
-            "secret": "90fe03cc0d1680ef21dcae12f4d0b762",
+            # # Zac个人微信公众号
+            # "appid": "wx3a026a0fbe15d5cb",
+            # "secret": "90fe03cc0d1680ef21dcae12f4d0b762",
+
+            # # 公司付费微信公众号
+            "appid": "wxdfa7b347df1b265c",
+            "secret": "3d4f4eca67fe3238ac08c21a213ae905",
         }
     ).json()
 
