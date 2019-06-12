@@ -1,0 +1,23 @@
+1.系统根账号登陆，如密码情况下回车2次进入MariaDB
+mysql -u root -p;
+
+2.创建用户并授权
+grant all privileges on (DBname).* to (DBusername) identified by (userpasswrod)
+
+3.使用新用户登录，回车后输入密码
+mysql -u (DBusername) -p (DBname)
+
+4.创建新表
+create table log (
+	id int auto_increment primary key,
+	ts timestamp default current_timestamp,
+	phrase varchar(128) not null,
+	letters varchar(32) not null,
+	ip varchar(16) not null,
+	browser_string varchar(256) not null,
+	results varchar(64) not null );
+
+5.显示表
+describe (tableName);
+
+

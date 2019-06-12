@@ -40,12 +40,29 @@ def sendmsg(openid, msg):
             "content": msg
         }
     }
+
+    # 发送消息模版
+    # data = {
+    #     "touser": 'openid',
+    #     "template_id": 'template_id',
+    #     "page": 'pages/index/index',
+    #     "form_id": 'aaa',
+    #     "data": {
+    #         'keyword1': {
+    #             'value': 'value1'
+    #         }
+    #     },
+    #     "emphasis_keyword": ''
+    # }
+
     response = requests.post(
         url="https://api.weixin.qq.com/cgi-bin/message/custom/send",
         params={
             'access_token': access_token
         },
         data=bytes(json.dumps(body, ensure_ascii=False), encoding='utf-8')
+        # data=data
+
     )
     # 这里可根据回执code进行判定是否发送成功(也可以根据code根据错误信息)
     result = response.json()
@@ -53,4 +70,5 @@ def sendmsg(openid, msg):
 
 
 if __name__ == '__main__':
-    sendmsg('personality19900901', '发送消息内容')
+    # sendmsg('personality19900901', '发送消息内容')
+    sendmsg('oJ-t35NgoS2pOgL8QN-8Q1Wr8OmY', '发送消息内容')
