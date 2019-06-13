@@ -20,4 +20,10 @@ create table log (
 5.显示表
 describe (tableName);
 
+6.账号／密码
+账号：xiezac
+密码：1121
+数据库：vsearchlogDB
+
+
 
