@@ -43,6 +43,6 @@ def send_move():
 
 if __name__ == '__main__':
     itchat.auto_login(hotReload=True)  # 首次扫描登录后后续自动登录
-    sched_time = datetime.datetime(2019, 6, 9, 22, 13,00)  # 设定初次触发事件的事件点
+    sched_time = datetime.datetime(2019, 6, 18, 20, 17, 20)  # 设定初次触发事件的事件点
     print('run the timer task at {0}'.format(sched_time))
     timerfun(sched_time)
