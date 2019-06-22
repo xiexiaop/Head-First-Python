@@ -74,24 +74,24 @@ def sendmsg(openid, msg):
         #   "appid":"wx67afc56d7f6cfac0",  #待使用上线小程序appid
         #   "path":"pages/reserve/mgr/mgr"
         # },
-        "data": {
-            "PARA1": {
-                "value": "参数1内容",
-                "color": "#173177"
-            },
-            "PARA2": {
-                "value": "参数2内容",
-                "color": "#173177"
-            },
-            "PARA3": {
-                "value": "参数3内容",
-                "color": "#173177"
-            },
-            "PARA4": {
-                "value": "参数4内容",
-                "color": "#173177"
-            }
-        }
+        # "data": {
+        #     "PARA1": {
+        #         "value": "参数1内容",
+        #         "color": "#173177"
+        #     },
+        #     "PARA2": {
+        #         "value": "参数2内容",
+        #         "color": "#173177"
+        #     },
+        #     "PARA3": {
+        #         "value": "参数3内容",
+        #         "color": "#173177"
+        #     },
+        #     "PARA4": {
+        #         "value": "参数4内容",
+        #         "color": "#173177"
+        #     }
+        # }
     }
 
     json_template = json.dumps(data)
