@@ -3,6 +3,7 @@ import wave
 import requests
 import json
 import base64
+import ffmpeg
 
 # Get Access Token
 url = "https://openapi.baidu.com/oauth/2.0/token"
